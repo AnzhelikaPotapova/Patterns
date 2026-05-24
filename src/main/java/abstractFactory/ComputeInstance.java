@@ -1,4 +1,12 @@
 package abstractFactory;
 
-public class ComputeInstance {
+/**
+ * Абстракция вычислительного узла.
+ */
+public interface ComputeInstance {
+
+    /**
+     * Запускает вычислительный узел.
+     */
+    void start();
 }

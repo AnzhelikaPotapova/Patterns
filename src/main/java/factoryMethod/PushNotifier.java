@@ -1,4 +1,12 @@
 package factoryMethod;
 
-public class PushNotifier {
+/**
+ * Отправитель push-уведомлений.
+ */
+public class PushNotifier extends Notifier {
+
+    @Override
+    protected Notification createNotification() {
+        return new PushNotification();
+    }
 }
